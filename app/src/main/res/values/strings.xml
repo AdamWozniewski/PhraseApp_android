@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MyPhrase</string>
+    <string name="find_phrase">Znajdź frazę</string>
+    <string name="reset">RESET</string>
+    <string name="copy_from_clipboard">Skopiuj ze schowka</string>
+    <string name="paste_here_text_text_from_clipboard">Wklej tutaj tekst ze schowka...</string>
 </resources>

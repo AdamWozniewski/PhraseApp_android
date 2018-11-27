@@ -10,22 +10,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-        <!--<ImageView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_centerHorizontal="true"-->
-            <!--android:id="@+id/imageView"-->
-            <!--android:src="@drawable/ic_launcher_foreground"-->
-            <!--android:adjustViewBounds="true"-->
-            <!--android:padding="20dp" />-->
-
-        <Button
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/imageView"
+            android:src="@drawable/logo"
+            android:adjustViewBounds="true"
+            android:padding="20dp" />
+
+        <Button
             android:id="@+id/buttonCopyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
             android:layout_centerHorizontal="true"
             android:ems="14"
-            android:text="Skopiuj ze schowka"
+            android:text="@string/copy_from_clipboard"
             android:textSize="20sp" />
         
         <LinearLayout
@@ -37,19 +38,19 @@
             android:gravity="center">
 
             <Button
+                android:id="@+id/buttonFindPhrase"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="7"
-                android:id="@+id/buttonFindPhrase"
-                android:text="Find phrase"
+                android:text="@string/find_phrase"
                 android:textSize="20sp" />
 
             <Button
+                android:id="@+id/buttonResetPhrase"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="7"
-                android:id="@+id/buttonResetPhrase"
-                android:text="RESET"
+                android:text="@string/reset"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -74,15 +75,15 @@
             android:layout_marginBottom="10dp" />
 
         <TextView
+            android:id="@+id/textViewCopiedPhrase"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/separator"
             android:layout_centerHorizontal="true"
             android:ems="14"
-            android:text=""
-            android:hint="Wklej tutaj tekst ze schowka..."
-            android:textSize="20sp"
+            android:hint="@string/paste_here_text_text_from_clipboard"
             android:paddingBottom="20dp"
-            android:id="@+id/textViewCopiedPhrase"/>
+            android:text=""
+            android:textSize="20sp" />
     </RelativeLayout>
 </ScrollView>
